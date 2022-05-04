@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
 import toast from 'react-hot-toast';
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   const [movies, setMovies] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
@@ -71,3 +71,4 @@ export const MoviesPage = () => {
     </>
   );
 };
+export default MoviesPage;

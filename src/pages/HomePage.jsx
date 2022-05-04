@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { fetchTrandingMovies } from 'services/api';
 
-export const HomePage = () => {
+const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const location = useLocation();
 
@@ -32,3 +32,4 @@ export const HomePage = () => {
     </>
   );
 };
+export default HomePage;

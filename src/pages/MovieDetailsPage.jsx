@@ -13,7 +13,7 @@ import {
   AdditionalInformation,
 } from './MovieDetalisPage.styled';
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState();
   const [loading, setLoading] = useState(false);
@@ -96,3 +96,4 @@ export const MovieDetailsPage = () => {
     </>
   );
 };
+export default MovieDetailsPage;

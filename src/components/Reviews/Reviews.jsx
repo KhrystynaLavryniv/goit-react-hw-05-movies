@@ -4,7 +4,7 @@ import { fetchMovieReviews } from '../../services/api';
 import Loader from '../Loader/Loader';
 import toast from 'react-hot-toast';
 
-export const Reviews = () => {
+const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   const { movieId } = useParams();
   const [loading, setLoading] = useState(false);
@@ -46,3 +46,4 @@ export const Reviews = () => {
     </>
   );
 };
+export default Reviews;

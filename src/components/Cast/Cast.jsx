@@ -5,7 +5,7 @@ import Loader from '../Loader/Loader';
 import toast from 'react-hot-toast';
 import { CastImg, CastItem } from './Cast.styled';
 
-export function Cast() {
+function Cast() {
   const [castInfo, setCastInfo] = useState([]);
   const { movieId } = useParams();
   const [loading, setLoading] = useState(false);
@@ -63,3 +63,4 @@ export function Cast() {
     </>
   );
 }
+export default Cast;
